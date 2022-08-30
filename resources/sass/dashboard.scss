@@ -1,0 +1,39 @@
+@import 'react-date-range/dist/styles.css'; // main style file
+@import 'react-date-range/dist/theme/default.css'; // theme css file
+@import 'bootstrap-daterangepicker/daterangepicker.css';
+
+$primary: #4834d4;
+$white: #fff;
+#dashboard {
+    .tabs {
+        background-color: $white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+   .tabs .nav {
+        display: flex; 
+        gap: 20px;
+        align-items: center;
+        li {
+            cursor: pointer;
+        }
+        li.active {
+            background-color:$primary;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 15px;
+        }
+   }
+
+   .tabs .outlet {
+    padding: 20px;
+    margin-top: 10px;
+   }
+
+   .home-tab .home-graph-item{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    margin-bottom: 40px;
+   }
+}
